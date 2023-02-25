@@ -2,37 +2,32 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: "Balsamiq Sans", cursive;
 }
 
-$primary-color: rgb(121, 113, 113);
-$secondary-color: rgb(202, 39, 148);
-
-// HEADER START
-
 .pink-color-text {
-  color: $secondary-color;
+  color: rgb(202, 39, 148);
 }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   margin: 2rem;
-  .logo-img {
-    width: 200px;
-  }
-  .nav-icon-wrapper .nav-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1.25rem;
-    height: 100%;
-    gap: 0.3rem;
-    .nav-icon-stripe {
-      border: 2px solid $primary-color;
-      border-radius: 1rem;
-    }
-  }
+}
+.header-wrapper .logo-img {
+  width: 200px;
+}
+.header-wrapper .nav-icon-wrapper .nav-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1.25rem;
+  height: 100%;
+  gap: 0.3rem;
+}
+.header-wrapper .nav-icon-wrapper .nav-icon .nav-icon-stripe {
+  border: 2px solid rgb(121, 113, 113);
+  border-radius: 1rem;
 }
 
 .top-nav {
@@ -40,19 +35,15 @@ $secondary-color: rgb(202, 39, 148);
   gap: 1rem;
   height: 100%;
   align-items: center;
-  a {
-    text-decoration: none;
-    color: $primary-color;
-  }
+}
+.top-nav a {
+  text-decoration: none;
+  color: rgb(121, 113, 113);
 }
 
 .top-nav a:last-child {
-  color: $secondary-color;
+  color: rgb(202, 39, 148);
 }
-
-// HEADER END
-
-// FIRST SECTION START
 
 .launching {
   overflow-x: hidden;
@@ -80,7 +71,7 @@ $secondary-color: rgb(202, 39, 148);
 
 .info-text {
   font-size: 18px;
-  color: $primary-color;
+  color: rgb(121, 113, 113);
 }
 
 .signup-btn {
@@ -88,8 +79,7 @@ $secondary-color: rgb(202, 39, 148);
   font-weight: 700;
   width: 9rem;
   padding: 1rem 0;
-  background: linear-gradient(white, white) padding-box,
-    linear-gradient(to right, darkblue, darkorchid) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, darkblue, darkorchid) border-box;
   border-radius: 5rem;
   border: 4px solid transparent;
 }
@@ -100,10 +90,6 @@ $secondary-color: rgb(202, 39, 148);
   left: 53%;
   top: -8%;
 }
-
-// FIRST SECTION END
-
-// SECOND SECTION START
 
 .free-nft-wrapper {
   background-image: url(assets/background.svg);
@@ -123,10 +109,6 @@ $secondary-color: rgb(202, 39, 148);
   padding-bottom: 1.5rem;
 }
 
-// SECOND SECTION END
-
-// THIRD SECTION START
-
 .fourth-spons {
   display: none;
 }
@@ -143,10 +125,6 @@ $secondary-color: rgb(202, 39, 148);
   overflow: hidden;
 }
 
-// THIRD SECTION END
-
-// FOURTH SECTION START
-
 .rare-nft-wrapper {
   padding: 0rem 0rem 4rem 2rem;
   overflow: hidden;
@@ -154,7 +132,7 @@ $secondary-color: rgb(202, 39, 148);
 
 .bid-word {
   text-decoration: underline;
-  color: $primary-color;
+  color: rgb(121, 113, 113);
 }
 
 .auction-text {
@@ -199,7 +177,7 @@ $secondary-color: rgb(202, 39, 148);
 
 .card-bottom p {
   font-size: 10px;
-  color: $primary-color;
+  color: rgb(121, 113, 113);
 }
 
 .card-bottom p:first-child {
@@ -211,15 +189,11 @@ $secondary-color: rgb(202, 39, 148);
   color: black;
 }
 
-// FOURTH SECTION END
-
-// FIVETH SECTION START
-
 .upsell-footer {
   overflow: hidden;
-  border-top: 1px solid $primary-color;
-  border-bottom: 1px solid $primary-color;
-  border-bottom: 1px solid $primary-color;
+  border-top: 1px solid rgb(121, 113, 113);
+  border-bottom: 1px solid rgb(121, 113, 113);
+  border-bottom: 1px solid rgb(121, 113, 113);
 }
 
 .upsell-footer-wrapper {
@@ -235,14 +209,11 @@ $secondary-color: rgb(202, 39, 148);
 
 .upsell-footer-middle-line {
   width: 100%;
-  border-bottom: 1px solid $primary-color;
+  border-bottom: 1px solid rgb(121, 113, 113);
   position: absolute;
   top: 50%;
 }
 
-// FIVETH SECTION END
-
-// FOOTER START
 .footer-wrapper {
   margin: 3rem 4rem 3rem 2rem;
 }
@@ -277,7 +248,7 @@ $secondary-color: rgb(202, 39, 148);
 
 .footer-wrapper a {
   text-decoration: none;
-  color: $primary-color;
+  color: rgb(121, 113, 113);
 }
 
 .bolded-footer-nav {
@@ -291,94 +262,80 @@ $secondary-color: rgb(202, 39, 148);
 .launch-date {
   display: none;
 }
-// FOOTER END
-
-// DESKTOP ADAPTATION
 
 @media (min-width: 1024px) {
-  .header-wrapper .nav-icon-wrapper {
-    .nav-icon {
-      display: none;
-    }
-    .top-nav {
-      display: flex;
-    }
+  .header-wrapper .nav-icon-wrapper .nav-icon {
+    display: none;
   }
-
+  .header-wrapper .nav-icon-wrapper .top-nav {
+    display: flex;
+  }
   .launching {
     display: flex;
     justify-content: space-between;
-    .launching-wrapper {
-      width: 50%;
-      margin-bottom: 5rem;
-    }
-    .nft-heading {
-      font-size: 78px;
-    }
-    .nft-graphic {
-      position: static;
-      width: 32rem;
-      height: auto;
-    }
   }
-
+  .launching .launching-wrapper {
+    width: 50%;
+    margin-bottom: 5rem;
+  }
+  .launching .nft-heading {
+    font-size: 78px;
+  }
+  .launching .nft-graphic {
+    position: static;
+    width: 32rem;
+    height: auto;
+  }
   .free-nft-wrapper {
     margin: 0 2rem;
     border-radius: 1rem;
   }
-
   .sponsors-wrapper {
     display: flex;
     justify-content: space-between;
-    .first-spons {
-      width: auto;
-      overflow: visible;
-    }
-    .fourth-spons {
-      display: block;
-    }
   }
-
+  .sponsors-wrapper .first-spons {
+    width: auto;
+    overflow: visible;
+  }
+  .sponsors-wrapper .fourth-spons {
+    display: block;
+  }
   .nft-card-wrapper {
     margin-right: 2rem;
-    .card {
-      width: 100%;
-    }
   }
-
+  .nft-card-wrapper .card {
+    width: 100%;
+  }
   .upsell-footer-middle-line {
     display: none;
   }
-
   .upsell-footer {
     display: flex;
     justify-content: space-between;
     padding-top: 4rem;
     margin: 0 2rem;
-    .upsell-footer-wrapper {
-      max-width: 50%;
-      margin: 0;
-    }
-    .nft-graphic-upsell {
-      position: static;
-      height: 30rem;
-    }
   }
-
+  .upsell-footer .upsell-footer-wrapper {
+    max-width: 50%;
+    margin: 0;
+  }
+  .upsell-footer .nft-graphic-upsell {
+    position: static;
+    height: 30rem;
+  }
   .footer-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    .footer-nav-wrapper {
-      grid-template-columns: repeat(4, 1fr);
-    }
+  }
+  .footer-wrapper .footer-nav-wrapper {
+    grid-template-columns: repeat(4, 1fr);
   }
   .footer-copyright {
     display: flex;
     justify-content: space-between;
-    .launch-date {
-      display: block;
-    }
   }
-}
-
-// DESKTOP ADAPTATION END
+  .footer-copyright .launch-date {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
