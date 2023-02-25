@@ -79,7 +79,7 @@
   background-image: url(assets/background.svg);
   background-position: center;
   background-size: cover;
-  padding: 10rem 2rem 3rem;
+  padding: 10rem 2rem 0;
 }
 
 .free-nft-heading {
@@ -90,6 +90,7 @@
 .free-nft-text {
   font-size: 18px;
   line-height: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .fourth-spons {
@@ -107,4 +108,69 @@
 .first-spons {
   width: 138px;
   overflow: hidden;
+}
+
+.rare-nft-wrapper {
+  padding: 0rem 0rem 4rem 2rem;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(121, 113, 113);
+}
+
+.bid-word {
+  text-decoration: underline;
+  color: rgb(121, 113, 113);
+}
+
+.auction-text {
+  margin-right: 2rem;
+}
+
+.nft-card-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.card {
+  min-width: 18rem;
+}
+
+.rare-nft-img {
+  width: 100%;
+  display: block;
+}
+
+.card-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 0;
+  padding: 1rem;
+  background-color: lightgray;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.eth-img {
+  height: 12px;
+}
+
+.price {
+  display: inline;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.card-bottom p {
+  font-size: 10px;
+  color: rgb(121, 113, 113);
+}
+
+.card-bottom p:first-child {
+  color: orange;
+}
+
+.card-bottom .bolded-card-bot {
+  font-size: 14px;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
