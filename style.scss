@@ -75,7 +75,7 @@ $secondary-color: rgb(202, 39, 148);
 .nft-heading {
   font-size: 52px;
   font-weight: bold;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 
 .info-text {
@@ -219,7 +219,6 @@ $secondary-color: rgb(202, 39, 148);
   overflow: hidden;
   border-top: 1px solid $primary-color;
   border-bottom: 1px solid $primary-color;
-  border-bottom: 1px solid $primary-color;
 }
 
 .upsell-footer-wrapper {
@@ -237,7 +236,7 @@ $secondary-color: rgb(202, 39, 148);
   width: 100%;
   border-bottom: 1px solid $primary-color;
   position: absolute;
-  top: 50%;
+  top: 51%;
 }
 
 // FIVETH SECTION END
@@ -314,6 +313,7 @@ $secondary-color: rgb(202, 39, 148);
     }
     .nft-heading {
       font-size: 78px;
+      line-height: 4rem;
     }
     .nft-graphic {
       position: static;
