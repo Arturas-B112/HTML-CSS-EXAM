@@ -73,4 +73,21 @@
   width: 25rem;
   left: 53%;
   top: -8%;
+}
+
+.free-nft-wrapper {
+  background-image: url(assets/background.svg);
+  background-position: center;
+  background-size: cover;
+  padding: 10rem 2rem 3rem;
+}
+
+.free-nft-heading {
+  font-size: 36px;
+  padding-bottom: 1rem;
+}
+
+.free-nft-text {
+  font-size: 18px;
+  line-height: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
