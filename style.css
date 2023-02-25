@@ -5,6 +5,10 @@
   font-family: "Balsamiq Sans", cursive;
 }
 
+.pink-color-text {
+  color: rgb(202, 39, 148);
+}
+
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -13,16 +17,32 @@
 .header-wrapper .logo-img {
   width: 200px;
 }
-.header-wrapper .nav-icon {
-  width: 1.25rem;
+.header-wrapper .nav-icon-wrapper .nav-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 1.25rem;
+  height: 100%;
   gap: 0.3rem;
 }
-.header-wrapper .nav-icon .nav-icon-stripe {
+.header-wrapper .nav-icon-wrapper .nav-icon .nav-icon-stripe {
   border: 2px solid rgb(121, 113, 113);
   border-radius: 1rem;
+}
+
+.top-nav {
+  display: none;
+  gap: 1rem;
+  height: 100%;
+  align-items: center;
+}
+.top-nav a {
+  text-decoration: none;
+  color: rgb(121, 113, 113);
+}
+
+.top-nav a:last-child {
+  color: rgb(202, 39, 148);
 }
 
 .launching {
@@ -34,12 +54,8 @@
   display: grid;
   gap: 1.5rem;
   width: 18rem;
-  margin: 0 2rem;
-  padding: 3rem 0;
-}
-
-.pink-color-text {
-  color: rgb(202, 39, 148);
+  height: 100%;
+  margin: 3rem 2rem;
 }
 
 .launch-heading {
@@ -50,7 +66,7 @@
 .nft-heading {
   font-size: 52px;
   font-weight: bold;
-  line-height: 3rem;
+  line-height: 4rem;
 }
 
 .info-text {
@@ -101,7 +117,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  overflow: hidden;
   padding: 3rem 2rem;
 }
 
@@ -113,7 +128,6 @@
 .rare-nft-wrapper {
   padding: 0rem 0rem 4rem 2rem;
   overflow: hidden;
-  border-bottom: 1px solid rgb(121, 113, 113);
 }
 
 .bid-word {
@@ -177,6 +191,8 @@
 
 .upsell-footer {
   overflow: hidden;
+  border-top: 1px solid rgb(121, 113, 113);
+  border-bottom: 1px solid rgb(121, 113, 113);
   border-bottom: 1px solid rgb(121, 113, 113);
 }
 
@@ -239,6 +255,87 @@
   font-weight: 700;
 }
 
+.footer-copyright {
+  margin: 0 2rem 3rem;
+}
+
 .launch-date {
   display: none;
+}
+
+@media (min-width: 1024px) {
+  .header-wrapper .nav-icon-wrapper .nav-icon {
+    display: none;
+  }
+  .header-wrapper .nav-icon-wrapper .top-nav {
+    display: flex;
+  }
+  .launching {
+    display: flex;
+    justify-content: space-between;
+  }
+  .launching .launching-wrapper {
+    width: 50%;
+    margin-bottom: 5rem;
+  }
+  .launching .nft-heading {
+    font-size: 78px;
+  }
+  .launching .nft-graphic {
+    position: static;
+    width: 32rem;
+    height: auto;
+  }
+  .free-nft-wrapper {
+    margin: 0 2rem;
+    border-radius: 1rem;
+  }
+  .sponsors-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sponsors-wrapper .first-spons {
+    width: auto;
+    overflow: visible;
+  }
+  .sponsors-wrapper .fourth-spons {
+    display: block;
+  }
+  .nft-card-wrapper {
+    margin-right: 2rem;
+  }
+  .nft-card-wrapper .card {
+    width: 100%;
+  }
+  .upsell-footer-middle-line {
+    display: none;
+  }
+  .upsell-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    margin: 0 2rem;
+  }
+  .upsell-footer .upsell-footer-wrapper {
+    max-width: 50%;
+    margin: 0;
+  }
+  .upsell-footer .nft-graphic-upsell {
+    position: static;
+    height: 30rem;
+  }
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-wrapper .footer-nav-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer-copyright {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-copyright .launch-date {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

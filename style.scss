@@ -9,6 +9,11 @@ $primary-color: rgb(121, 113, 113);
 $secondary-color: rgb(202, 39, 148);
 
 // HEADER START
+
+.pink-color-text {
+  color: $secondary-color;
+}
+
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -16,17 +21,33 @@ $secondary-color: rgb(202, 39, 148);
   .logo-img {
     width: 200px;
   }
-  .nav-icon {
-    width: 1.25rem;
+  .nav-icon-wrapper .nav-icon {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 1.25rem;
+    height: 100%;
     gap: 0.3rem;
     .nav-icon-stripe {
       border: 2px solid $primary-color;
       border-radius: 1rem;
     }
   }
+}
+
+.top-nav {
+  display: none;
+  gap: 1rem;
+  height: 100%;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+.top-nav a:last-child {
+  color: $secondary-color;
 }
 
 // HEADER END
@@ -42,12 +63,8 @@ $secondary-color: rgb(202, 39, 148);
   display: grid;
   gap: 1.5rem;
   width: 18rem;
-  margin: 0 2rem;
-  padding: 3rem 0;
-}
-
-.pink-color-text {
-  color: $secondary-color;
+  height: 100%;
+  margin: 3rem 2rem;
 }
 
 .launch-heading {
@@ -58,7 +75,7 @@ $secondary-color: rgb(202, 39, 148);
 .nft-heading {
   font-size: 52px;
   font-weight: bold;
-  line-height: 3rem;
+  line-height: 4rem;
 }
 
 .info-text {
@@ -118,7 +135,6 @@ $secondary-color: rgb(202, 39, 148);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  overflow: hidden;
   padding: 3rem 2rem;
 }
 
@@ -134,7 +150,6 @@ $secondary-color: rgb(202, 39, 148);
 .rare-nft-wrapper {
   padding: 0rem 0rem 4rem 2rem;
   overflow: hidden;
-  border-bottom: 1px solid $primary-color;
 }
 
 .bid-word {
@@ -202,6 +217,8 @@ $secondary-color: rgb(202, 39, 148);
 
 .upsell-footer {
   overflow: hidden;
+  border-top: 1px solid $primary-color;
+  border-bottom: 1px solid $primary-color;
   border-bottom: 1px solid $primary-color;
 }
 
@@ -267,7 +284,101 @@ $secondary-color: rgb(202, 39, 148);
   font-weight: 700;
 }
 
+.footer-copyright {
+  margin: 0 2rem 3rem;
+}
+
 .launch-date {
   display: none;
 }
 // FOOTER END
+
+// DESKTOP ADAPTATION
+
+@media (min-width: 1024px) {
+  .header-wrapper .nav-icon-wrapper {
+    .nav-icon {
+      display: none;
+    }
+    .top-nav {
+      display: flex;
+    }
+  }
+
+  .launching {
+    display: flex;
+    justify-content: space-between;
+    .launching-wrapper {
+      width: 50%;
+      margin-bottom: 5rem;
+    }
+    .nft-heading {
+      font-size: 78px;
+    }
+    .nft-graphic {
+      position: static;
+      width: 32rem;
+      height: auto;
+    }
+  }
+
+  .free-nft-wrapper {
+    margin: 0 2rem;
+    border-radius: 1rem;
+  }
+
+  .sponsors-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .first-spons {
+      width: auto;
+      overflow: visible;
+    }
+    .fourth-spons {
+      display: block;
+    }
+  }
+
+  .nft-card-wrapper {
+    margin-right: 2rem;
+    .card {
+      width: 100%;
+    }
+  }
+
+  .upsell-footer-middle-line {
+    display: none;
+  }
+
+  .upsell-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    margin: 0 2rem;
+    .upsell-footer-wrapper {
+      max-width: 50%;
+      margin: 0;
+    }
+    .nft-graphic-upsell {
+      position: static;
+      height: 30rem;
+    }
+  }
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .footer-nav-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    .launch-date {
+      display: block;
+    }
+  }
+}
+
+// DESKTOP ADAPTATION END
