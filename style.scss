@@ -62,7 +62,7 @@ $secondary-color: rgb(202, 39, 148);
 }
 
 .info-text {
-  font-size: 22px;
+  font-size: 18px;
   color: $primary-color;
 }
 
@@ -92,7 +92,7 @@ $secondary-color: rgb(202, 39, 148);
   background-image: url(assets/background.svg);
   background-position: center;
   background-size: cover;
-  padding: 10rem 2rem 0;
+  padding: 7rem 2rem 0;
 }
 
 .free-nft-heading {
@@ -211,7 +211,7 @@ $secondary-color: rgb(202, 39, 148);
 
 .nft-graphic-upsell {
   position: absolute;
-  width: 10rem;
+  width: 11rem;
   left: 65%;
   top: 25%;
 }
@@ -224,3 +224,50 @@ $secondary-color: rgb(202, 39, 148);
 }
 
 // FIVETH SECTION END
+
+// FOOTER START
+.footer-wrapper {
+  margin: 3rem 4rem 3rem 2rem;
+}
+
+.footer-wrapper .info-text {
+  padding: 1rem 0;
+}
+
+.social-icons-wrapper {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-nav-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.under-nav-items-wrapper {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.footer-wrapper a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.bolded-footer-nav {
+  font-weight: 700;
+}
+
+.launch-date {
+  display: none;
+}
+// FOOTER END

@@ -54,7 +54,7 @@
 }
 
 .info-text {
-  font-size: 22px;
+  font-size: 18px;
   color: rgb(121, 113, 113);
 }
 
@@ -79,7 +79,7 @@
   background-image: url(assets/background.svg);
   background-position: center;
   background-size: cover;
-  padding: 10rem 2rem 0;
+  padding: 7rem 2rem 0;
 }
 
 .free-nft-heading {
@@ -186,7 +186,7 @@
 
 .nft-graphic-upsell {
   position: absolute;
-  width: 10rem;
+  width: 11rem;
   left: 65%;
   top: 25%;
 }
@@ -196,4 +196,49 @@
   border-bottom: 1px solid rgb(121, 113, 113);
   position: absolute;
   top: 50%;
+}
+
+.footer-wrapper {
+  margin: 3rem 4rem 3rem 2rem;
+}
+
+.footer-wrapper .info-text {
+  padding: 1rem 0;
+}
+
+.social-icons-wrapper {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-nav-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.under-nav-items-wrapper {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.footer-wrapper a {
+  text-decoration: none;
+  color: rgb(121, 113, 113);
+}
+
+.bolded-footer-nav {
+  font-weight: 700;
+}
+
+.launch-date {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
