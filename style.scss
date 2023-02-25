@@ -195,3 +195,32 @@ $secondary-color: rgb(202, 39, 148);
   font-size: 14px;
   color: black;
 }
+
+// FOURTH SECTION END
+
+// FIVETH SECTION START
+
+.upsell-footer {
+  overflow: hidden;
+  border-bottom: 1px solid $primary-color;
+}
+
+.upsell-footer-wrapper {
+  padding-right: 4.75rem;
+}
+
+.nft-graphic-upsell {
+  position: absolute;
+  width: 10rem;
+  left: 65%;
+  top: 25%;
+}
+
+.upsell-footer-middle-line {
+  width: 100%;
+  border-bottom: 1px solid $primary-color;
+  position: absolute;
+  top: 50%;
+}
+
+// FIVETH SECTION END

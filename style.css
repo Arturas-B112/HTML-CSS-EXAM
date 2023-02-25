@@ -173,4 +173,27 @@
 .card-bottom .bolded-card-bot {
   font-size: 14px;
   color: black;
+}
+
+.upsell-footer {
+  overflow: hidden;
+  border-bottom: 1px solid rgb(121, 113, 113);
+}
+
+.upsell-footer-wrapper {
+  padding-right: 4.75rem;
+}
+
+.nft-graphic-upsell {
+  position: absolute;
+  width: 10rem;
+  left: 65%;
+  top: 25%;
+}
+
+.upsell-footer-middle-line {
+  width: 100%;
+  border-bottom: 1px solid rgb(121, 113, 113);
+  position: absolute;
+  top: 50%;
 }/*# sourceMappingURL=style.css.map */
