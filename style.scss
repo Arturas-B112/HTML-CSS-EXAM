@@ -2,14 +2,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Balsamiq Sans', cursive;
 }
 
-$primary-color: rgb(161, 153, 153);
+$primary-color: rgb(121, 113, 113);
+$secondary-color: rgb(202, 39, 148);
 
+// HEADER START
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 1.5rem;
+  margin: 2rem;
   .logo-img {
     width: 200px;
   }
@@ -25,3 +28,60 @@ $primary-color: rgb(161, 153, 153);
     }
   }
 }
+
+// HEADER END
+
+// FIRST SECTION START
+
+.launching {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.launching-wrapper {
+  display: grid;
+  gap: 1.5rem;
+  width: 18rem;
+  margin: 0 2rem;
+  padding: 3rem 0;
+}
+
+.pink-color-text {
+  color: $secondary-color;
+}
+
+.launch-heading {
+  font-size: 16px;
+  letter-spacing: 0.025rem;
+}
+
+.nft-heading {
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+.info-text {
+  font-size: 22px;
+  color: $primary-color;
+}
+
+.signup-btn {
+  font-size: 18px;
+  font-weight: 700;
+  width: 9rem;
+  padding: 1rem 0;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 5rem;
+  border: 4px solid transparent;
+}
+
+.nft-graphic {
+  position: absolute;
+  width: 25rem;
+  left: 53%;
+  top: -8%;
+}
+
+// FIRST SECTION END
