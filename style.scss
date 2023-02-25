@@ -104,3 +104,24 @@ $secondary-color: rgb(202, 39, 148);
   font-size: 18px;
   line-height: 1.5rem;
 }
+
+// SECOND SECTION END
+
+// THIRD SECTION START
+
+.fourth-spons {
+  display: none;
+}
+
+.sponsors-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  overflow: hidden;
+  padding: 3rem 2rem;
+}
+
+.first-spons {
+  width: 138px;
+  overflow: hidden;
+}
